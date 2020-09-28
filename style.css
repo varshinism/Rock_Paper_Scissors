@@ -1,0 +1,443 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    align-items: center;
+    justify-content: center;
+    min-width: 100%;
+    background: radial-gradient(hsl(214, 47%, 23%) 0%, hsl(237, 49%, 15%) 100%);
+    font-family:'Barlow Semi Condensed', sans-serif;
+}
+
+/* Heading */
+.head-div {
+    width: 75%;
+    padding: 30px;
+    border: solid 2px hsl(217, 16%, 45%);
+    margin: 30px auto;
+    border-radius: 20px;
+}
+
+.head-div .logo {
+    width: 150px;
+}
+
+.head-div .score {
+    float: right;
+    width: 120px;
+    height: 120px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: -15px;
+}
+
+.score h3{
+    color: hsl(229, 64%, 46%);
+    font-size: 15px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 700;
+    margin-top: 4px;
+    margin-bottom: 0px;
+    letter-spacing: 2px;
+    text-align: center;
+
+}
+
+.score h1 {
+    color: hsl(229, 25%, 31%);
+    font-size: 70px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* play */
+.first {
+    height: 400px;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    margin-top: 100px;
+}
+
+.triangle {
+    position: absolute;
+    z-index: -1;
+    top: 60px;
+    left: 50%;
+    margin-left: -175px;
+}
+
+.icon {
+    border-radius: 50%;
+    padding: 30px;
+    height: 180px;
+    width: 180px;
+    border: 20px solid;
+    position: absolute;
+}
+
+.icon:hover {
+    box-shadow: none;
+    transform: translateY(10px);
+}
+
+.blue {
+    border-color: hsl(230, 89%, 62%);
+    left: 38%;
+    margin-left: -90px;
+    color: hsl(230, 89%, 65%);
+    box-shadow: inset 0px 7px 2px #cecece;
+}
+
+.yellow {
+    border-color: hsl(39, 89%, 49%);
+    right: 40%;
+    margin-right: -90px;
+    color: hsl(40, 84%, 53%);
+    box-shadow: inset 0px 7px 2px #cecece;
+}
+
+.red {
+    border-color: hsl(349, 71%, 52%);
+    left: 40.5%;
+    top: 230px;
+    color: hsl(349, 70%, 56%);
+    box-shadow: inset 0px 7px 2px #cecece;
+}
+
+/* rules */
+.rule-button {
+    height: 40px;
+    width: 130px;
+    float: right;
+    margin-right: 30px;
+    border: solid 2px hsl(217, 16%, 45%);
+    border-radius: 10px;
+    color: #fff;
+    background-color: transparent;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 600;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+.rule-button:hover {
+    background-color: #fff;
+    color: hsl(229, 25%, 31%);
+}
+
+.rule-container .rule-img {
+    width: 40%;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+}
+
+.cross {
+    position: absolute;
+    background-color: #cecece;
+    z-index: 3;
+    width: 30px;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.blur {
+    opacity: 10%;
+}
+
+#second {
+    height: 400px;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    margin-top: 100px;
+}
+
+#second .container {
+    display: flex;
+    text-align: center;
+}
+
+.box {
+    width: 50%;
+    height: 100%;
+    color: #fff;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    letter-spacing: 3px;
+}
+
+.container-icon {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    position: static;
+    margin: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    border: 30px solid;
+}
+
+.container-icon img {
+    width: 60%;
+}
+.container-icon.empty {
+    background-color: hsl(237, 49%, 15%);
+    border: none;
+}
+
+.box h1 {
+    margin: 50px;
+    font-size: 30px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 700;
+}
+
+#final {
+    height: 400px;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    margin-top: 100px;
+}
+
+.result {
+    display: flex;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 700;
+}
+
+.play-div {
+    width: 35%;
+    height: 100%;
+    letter-spacing: 3px;
+}
+
+.play-div h1 {
+    margin: 50px;
+    font-size: 30px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 700;
+}
+
+.declare {
+    width: 30%;
+    height: 100%;
+    justify-content: center;
+    padding-top: 200px;
+}
+
+.declare h1{
+    font-size: 50px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+}
+
+.declare button {
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #fff;
+    border: none;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    color: hsl(229, 25%, 31%);
+}
+
+.declare button:hover {
+    color: hsl(349, 70%, 56%);
+}
+
+.win {
+    position: relative;
+    left: auto;
+    top: auto;
+    box-shadow: 0 0 0 40px hsl(229, 25%, 31%), 0 0 0 80px hsl(228, 29%, 26%), 0 0 0 120px hsl(228, 36%, 25%), 0 0 0 160px hsl(229, 42%, 22%);
+    z-index: -1;
+}
+
+.visible {
+    display: none;
+}
+
+
+@media (max-width:1000px){
+
+    body{
+        min-height: 130vh;
+    }
+
+    /* Heading */
+    .head-div{
+        width: 100%;
+    }
+
+    .head-div .logo{
+        width: 120px;
+    }
+    .head-div .score{
+        width: 100px;
+        height: 100px;
+    }
+    .score h3{
+        line-height: 10px;
+    }
+
+    #Heading i{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    #Heading a{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .profile{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+
+    /* first */
+    .icon {
+        border-radius: 50%;
+        padding: 30px;
+        height: 150px;
+        width: 150px;
+        border: 15px solid;
+        position: absolute;
+    }
+    
+    .blue{
+        left: 25%;
+    }
+    .yellow{
+        right: 25%;
+    }
+    .red {
+        left : 25%;
+    }
+    .triangle{
+        margin-left: -160px;
+    }
+
+
+    /* second */
+    .box h1{
+        margin: auto auto 50px auto;
+    }
+    .container-icon{
+        width: 150px;
+        height: 150px;
+        border: 15px solid;
+    }
+
+    /* final */
+    .play-div{
+        width: 50%;
+    }
+    .play-div h1{
+        font-size: 16px;
+        margin: auto auto 50px auto;
+    }
+    
+    .declare{
+        position: absolute;
+        top: 150px;
+        left: 50%;
+        margin-left: -165px;
+        justify-content: center;
+        width: 50%;
+        height: 100px;
+    }
+    .declare h1{
+        font-size: 40px;
+        left: 50%;
+    }
+    .declare button {
+        margin-left: 40%;
+    }
+
+    .win{
+        box-shadow: 0 0 0 20px hsl(229, 25%, 31%), 0 0 0 40px hsl(228, 29%, 26%),0 0 0 60px hsl(228, 36%, 25%),0 0 0 0px hsl(229, 42%, 22%);
+        left: 0;
+        right: 0;
+    }
+
+    /* rule */
+    .rule-button{
+        float: none;
+        position: absolute;
+        left: 50%;
+        margin-left: -65px;
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+    .rule-container .rule-img{
+        width: 70%;
+        top: 50%;
+        left: 15%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1366px
+
+## Colors
+
+### Primary
+
+- Scissors Gradient: hsl(39, 89%, 49%) to hsl(40, 84%, 53%)
+- Paper Gradient: hsl(230, 89%, 62%) to hsl(230, 89%, 65%)
+- Rock Gradient: hsl(349, 71%, 52%) to hsl(349, 70%, 56%)
+- Lizard Gradient: hsl(261, 73%, 60%) to hsl(261, 72%, 63%)
+- Cyan: hsl(189, 59%, 53%) to hsl(189, 58%, 57%)
+
+### Neutral
+
+- Dark Text: hsl(229, 25%, 31%)
+- Score Text: hsl(229, 64%, 46%)
+- Header Outline: hsl(217, 16%, 45%)
+
+### Background
+
+- Radial Gradient: hsl(214, 47%, 23%) to hsl(237, 49%, 15%)
+
+## Fonts
+
+- Family: [Barlow Semi Condensed](https://fonts.google.com/specimen/Barlow+Semi+Condensed)
+- Weights: 600, 700 */
