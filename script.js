@@ -105,7 +105,7 @@ function compareColours(player,bot){
         document.querySelector(".play-div button.bot").classList.remove("win");
     }
     else if(player==="yellow" && bot==="red" || player==="blue" && bot==="yellow" || player==="red" && bot==="blue"){
-        document.querySelector(".declare h1").innerText="YOU LOSE :( ";
+        document.querySelector(".declare h1").innerText="YOU LOSE:( ";
         document.querySelector(".play-div button.bot").classList.add("win");
         document.querySelector(".play-div button.player").classList.remove("win");
     }
