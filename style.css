@@ -390,7 +390,7 @@ body {
     .rule-button{
         float: none;
         position: absolute;
-        top: 90%;
+        top: 100%;
         left: 32%;
     }
     .rule-container .rule-img{
@@ -402,7 +402,7 @@ body {
         display: none;
     }
     .blur {
-        opacity: 3%;
+        opacity: 0;
     }
     .cross {
         position: absolute;
