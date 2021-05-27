@@ -9,13 +9,12 @@ let score = 0;
 const buttonOptions=["red","blue","yellow"];
 
 for(var i=0;i<=2;i++){
-    document.querySelectorAll("button")[i].addEventListener("click",function() {
-        
-        
-        
+    document.querySelectorAll("button")[i].addEventListener("click",function() {   
         const buttonClass = this.classList;
         document.querySelector(".first").classList.add("visible");
         document.querySelector("#second").classList.remove("visible");
+
+        
         for(var j=0;j<=buttonClass.length;j++){
             if(buttonClass[j]==="red"||buttonClass[j]==="yellow"||buttonClass[j]==="blue"){
                 const user = buttonClass[j];
