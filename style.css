@@ -63,7 +63,7 @@ body {
     width: 100%;
     align-items: center;
     position: relative;
-    margin-top: 100px;
+    margin-top: 60px;
 }
 
 .triangle {
@@ -207,7 +207,7 @@ body {
     width: 100%;
     align-items: center;
     position: relative;
-    margin-top: 70px;
+    margin-top: 60px;
 }
 
 .result {
@@ -390,13 +390,16 @@ body {
     .rule-button{
         float: none;
         position: absolute;
-        top: 85%;
+        top: 90%;
         left: 32%;
     }
     .rule-container .rule-img{
         width: 75%;
         top: 30%;
         left: 12%;
+    }
+    .visible {
+        display: none;
     }
     .blur {
         opacity: 3%;
