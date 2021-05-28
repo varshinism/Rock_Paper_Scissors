@@ -402,7 +402,7 @@ body {
         display: none;
     }
     .blur {
-        opacity: 0;
+        opacity: 0.6;
     }
     .cross {
         position: absolute;
@@ -410,7 +410,7 @@ body {
         border-radius: 50%;
         z-index: 3;
         width: 30px;
-        top: 70%;
+        top: 80%;
         right: 46%;
         cursor: pointer;
     }
