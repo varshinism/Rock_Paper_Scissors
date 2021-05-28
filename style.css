@@ -365,7 +365,7 @@ body {
     
     .declare{
         position: absolute;
-        top: 10%;
+        top: 5%;
         left: 50%;
         margin-left: -165px;
         justify-content: center;
@@ -390,7 +390,7 @@ body {
     .rule-button{
         float: none;
         position: absolute;
-        top: 100%;
+        top: 90%;
         left: 32%;
     }
     .rule-container .rule-img{
@@ -402,7 +402,7 @@ body {
         display: none;
     }
     .blur {
-        opacity: 0.6;
+        opacity: 0.2;
     }
     .cross {
         position: absolute;
