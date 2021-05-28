@@ -365,7 +365,7 @@ body {
     
     .declare{
         position: absolute;
-        top: 5%;
+        top: -5%;
         left: 50%;
         margin-left: -165px;
         justify-content: center;
